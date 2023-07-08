@@ -1,0 +1,6 @@
+if Ben observes with an applicative-order eval... interpreter, the output of the program will be "0".
+and if he decides to use a normal-order eval... interpreter, the program will run infinitely/recursively thus there
+wouldn't be any output since the program will be stuck in (p).
+applicative-order evaluation evaluates procedures by evaluating the procedures argument before evaluating the operator
+of the procedure thus when evaluating (test 0 (p)) the interpreter will run recursively at (p) since it's defined to ouput itself thus it runs in a loop.
+for normal-order eval... the interpretor will evaluate all procedures operator to it's primitive form before evaluating the operands starting from the in built primitive procedure
